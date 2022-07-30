@@ -3,6 +3,9 @@
 @tailwind utilities;
 .bar {
     
-  min-width: 6em;
+  min-height: 6em;
   /* margin-top: 2em; */
+}
+.topTo{
+  /* writing-mode:vertical-rl ; */
 }

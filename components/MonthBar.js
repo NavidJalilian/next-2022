@@ -1,68 +1,127 @@
 import React from "react";
 
-export default function MonthBar({ amount = 20, total = 100 }) {
-  const posandage = (amount / total) * 100 + "%";
+export default function MonthBar() {
   return (
-    <div className="py-4 flex justify-start" >
-      <div
-        className=" bar mt-8  rotate-90  
-        bg-gray-200 rounded-full dark:bg-gray-700"
-      >
-        <div
-          className="bg-purple-600 text-xs font-medium transition-transform 
-            text-blue-100 text-center p-0.5 leading-none rounded-full"
-          style={{ width: `${posandage}` }}
-        >
-          {posandage}
+    <div className="flex justify-around">
+      <div className="">
+        <div className="month-bar w-4 bg-gray-700 bar mt-4 ml-2 rounded relative ">
+          <div
+            className="bar-indicator absolute top-0 bg-purple-500
+         w-full rounded"
+            style={{ height: "10%" }}
+          ></div>
         </div>
+        <span className="text-white capitalize text-xs ml-1">Jan</span>
       </div>
-      <div
-        className=" bar mt-8  rotate-90  
-        bg-gray-200 rounded-full dark:bg-gray-700"
-      >
-        <div
-          className="bg-purple-600 text-xs font-medium transition-transform 
-            text-blue-100 text-center p-0.5 leading-none rounded-full"
-          style={{ width: `${posandage}` }}
-        >
-          {posandage}
+      <div className="">
+        <div className="month-bar w-4 bg-gray-700 bar mt-4 ml-2 rounded relative ">
+          <div
+            className="bar-indicator absolute top-0 bg-purple-500
+         w-full rounded"
+            style={{ height: "10%" }}
+          ></div>
         </div>
+        <span className="text-white capitalize text-xs ml-1">feb</span>
       </div>
-      <div
-        className=" bar mt-8  rotate-90  
-        bg-gray-200 rounded-full dark:bg-gray-700"
-      >
-        <div
-          className="bg-purple-600 text-xs font-medium transition-transform 
-            text-blue-100 text-center p-0.5 leading-none rounded-full"
-          style={{ width: `${posandage}` }}
-        >
-          {posandage}
+      <div className="">
+        <div className="month-bar w-4 bg-gray-700 bar mt-4 ml-2 rounded relative ">
+          <div
+            className="bar-indicator absolute top-0 bg-purple-500
+         w-full rounded"
+            style={{ height: "10%" }}
+          ></div>
         </div>
+        <span className="text-white capitalize text-xs ml-1">Mar</span>
       </div>
-      <div
-        className=" bar mt-8  rotate-90  
-        bg-gray-200 rounded-full dark:bg-gray-700"
-      >
-        <div
-          className="bg-purple-600 text-xs font-medium transition-transform 
-            text-blue-100 text-center p-0.5 leading-none rounded-full"
-          style={{ width: `${posandage}` }}
-        >
-          {posandage}
+      <div className="">
+        <div className="month-bar w-4 bg-gray-700 bar mt-4 ml-2 rounded relative ">
+          <div
+            className="bar-indicator absolute top-0 bg-purple-500
+         w-full rounded"
+            style={{ height: "10%" }}
+          ></div>
         </div>
+        <span className="text-white capitalize text-xs ml-1">Apr</span>
       </div>
-      <div
-        className=" bar mt-8  rotate-90  
-        bg-gray-200 rounded-full dark:bg-gray-700"
-      >
-        <div
-          className="bg-purple-600 text-xs font-medium transition-transform 
-            text-blue-100 text-center p-0.5 leading-none rounded-full"
-          style={{ width: `${posandage}` }}
-        >
-          {posandage}
+      <div className="">
+        <div className="month-bar w-4 bg-gray-700 bar mt-4 ml-2 rounded relative ">
+          <div
+            className="bar-indicator absolute top-0 bg-purple-500
+         w-full rounded"
+            style={{ height: "10%" }}
+          ></div>
         </div>
+        <span className="text-white capitalize text-xs ml-1">May</span>
+      </div>
+      <div className="">
+        <div className="month-bar w-4 bg-gray-700 bar mt-4 ml-2 rounded relative ">
+          <div
+            className="bar-indicator absolute top-0 bg-purple-500
+         w-full rounded"
+            style={{ height: "10%" }}
+          ></div>
+        </div>
+        <span className="text-white capitalize text-xs ml-1">Jun</span>
+      </div>
+      <div className="">
+        <div className="month-bar w-4 bg-gray-700 bar mt-4 ml-2 rounded relative ">
+          <div
+            className="bar-indicator absolute top-0 bg-purple-500
+         w-full rounded"
+            style={{ height: "10%" }}
+          ></div>
+        </div>
+        <span className="text-white capitalize text-xs ml-1">Jul</span>
+      </div>
+      <div className="">
+        <div className="month-bar w-4 bg-gray-700 bar mt-4 ml-2 rounded relative ">
+          <div
+            className="bar-indicator absolute top-0 bg-purple-500
+         w-full rounded"
+            style={{ height: "10%" }}
+          ></div>
+        </div>
+        <span className="text-white capitalize text-xs ml-1">Aug</span>
+      </div>
+      <div className="">
+        <div className="month-bar w-4 bg-gray-700 bar mt-4 ml-2 rounded relative ">
+          <div
+            className="bar-indicator absolute top-0 bg-purple-500
+         w-full rounded"
+            style={{ height: "10%" }}
+          ></div>
+        </div>
+        <span className="text-white capitalize text-xs ml-1">Sep</span>
+      </div>
+      <div className="">
+        <div className="month-bar w-4 bg-gray-700 bar mt-4 ml-2 rounded relative ">
+          <div
+            className="bar-indicator absolute top-0 bg-purple-500
+         w-full rounded"
+            style={{ height: "10%" }}
+          ></div>
+        </div>
+        <span className="text-white capitalize text-xs ml-1">Oct</span>
+      </div>
+      <div className="">
+        <div className="month-bar w-4 bg-gray-700 bar mt-4 ml-2 rounded relative ">
+          <div
+            className="bar-indicator absolute top-0 bg-purple-500
+         w-full rounded"
+            style={{ height: "10%" }}
+          ></div>
+        </div>
+        <span className="text-white capitalize text-xs ml-1">Nov</span>
+      </div>
+      <div className="">
+        <div className="month-bar w-4 bg-gray-700 bar mt-4 ml-2 rounded relative ">
+          <div
+            className="bar-indicator absolute top-0 bg-purple-500
+         w-full rounded"
+            style={{ height: "10%" }}
+          ></div>
+        </div>
+        <span className="text-white capitalize text-xs ml-1">Dec</span>
       </div>
     </div>
   );
