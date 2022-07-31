@@ -1,25 +1,24 @@
 import { useState } from "react";
 
 export default function NewExpense({ addToCollection }) {
-  const [data, setData] = useState(
-    {
+  const [data, setData] = useState({
     title: "",
     date: "",
-    amount: 0,
+    amount: "",
+    animate: "goToLeft",
   });
   function chnageHandler(e) {
     if (e.target.name === "title")
       setData((state) => ({ ...state, title: e.target.value }));
     else if (e.target.name === "date")
       setData((state) => ({ ...state, date: e.target.value }));
-    else setData((state) => ({ ...state, amount: +e.target.value }));
+    else setData((state) => ({ ...state, amount: e.target.value }));
   }
   function submitHandler(e) {
     e.preventDefault();
-    if (data.title.length === 0 || data.date.length === 0 || data.amount === 0)
+    if (data.title.length === 0 || data.date.length === 0 || +data.amount === 0)
       return;
     addToCollection(data);
-   
   }
   return (
     <form
@@ -66,6 +65,7 @@ export default function NewExpense({ addToCollection }) {
           min="0"
           type="number"
           name="amount"
+          placeholder="200"
           id=""
           className="block w-full outline-none rounded px-2"
         />

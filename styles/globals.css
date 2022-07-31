@@ -2,10 +2,19 @@
 @tailwind components;
 @tailwind utilities;
 .bar {
-    
   min-height: 6em;
   /* margin-top: 2em; */
 }
-.topTo{
-  /* writing-mode:vertical-rl ; */
+.goToLeft {
+  /* animation: name duration timing-function delay iteration-count direction fill-mode; */
+  animation: fadeIn 200ms ease-in-out;
+  transition: opacity 0.2s ease-in-out;
+}
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
 }

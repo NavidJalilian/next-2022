@@ -9,10 +9,9 @@ export default function MonthBar({
   month: string;
   totalInYear: number;
 }) {
-  console.log(amount, month, totalInYear);
 
   const posandage =
-    amount === 0 ? "0" : ((amount / totalInYear) * 100).toFixed();
+    amount === 0 ? "0" : (( +amount / totalInYear) * 100).toFixed();
   return (
     <div className="">
       <div
