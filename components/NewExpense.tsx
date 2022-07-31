@@ -12,7 +12,7 @@ export default function NewExpense({ addToCollection }) {
       setData((state) => ({ ...state, title: e.target.value }));
     else if (e.target.name === "date")
       setData((state) => ({ ...state, date: e.target.value }));
-    else setData((state) => ({ ...state, amount: e.target.value }));
+    else setData((state) => ({ ...state, amount: +e.target.value }));
   }
   function submitHandler(e) {
     e.preventDefault();

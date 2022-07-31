@@ -1,8 +1,8 @@
 import React, { useState } from "react";
 
-export default function Expenses({expenses}) {
+export default function Expenses({ expenses }) {
   function unicId() {
-    return Math.random().toString(2).substr(2, 9);
+    return Math.random().toString(4).slice(2);
   }
   return (
     <div className="mt-10 ">
@@ -17,7 +17,9 @@ export default function Expenses({expenses}) {
             {i.date}
           </div>
           <p className="font-bold">{i.title}</p>
-          <strong className="ml-auto mr-2 bg-purple-600 p-2 rounded-md">${i.amount}</strong>
+          <strong className="ml-auto mr-2 bg-purple-600 p-2 rounded-md">
+            ${i.amount}
+          </strong>
         </article>
       ))}
     </div>
