@@ -1,23 +1,14 @@
 import React, { useState } from "react";
 
-export default function Expenses() {
-  const [expenses, setExpenses] = useState([
-    {
-      amount: 24,
-      date: "2022-06-30",
-      title: "hello",
-    },
-    {
-      amount: 24,
-      date: "2022-06-30",
-      title: "hello",
-    },
-  ]);
+export default function Expenses({expenses}) {
+  function unicId() {
+    return Math.random().toString(2).substr(2, 9);
+  }
   return (
     <div className="mt-10 ">
       {expenses.map((i) => (
         <article
-          key={i.title + "10"}
+          key={unicId()}
           className="date p-4 text-white bg-gray-500 flex items-center
           rounded m-2
           capitalize  justify-evenly"
