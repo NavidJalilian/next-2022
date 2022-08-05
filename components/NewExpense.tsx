@@ -65,7 +65,6 @@ export default function NewExpense({ addToCollection }) {
           min="0"
           type="number"
           name="amount"
-          placeholder="200"
           id=""
           className="block w-full outline-none rounded px-2"
         />
