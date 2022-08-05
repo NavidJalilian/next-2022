@@ -1,5 +1,6 @@
 import React, { useState } from "react";
 
+
 export default function Expenses({ animate, date, amount, title }) {
   function unicId() {
     return Math.random().toString(4).slice(2);
