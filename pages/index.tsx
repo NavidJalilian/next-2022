@@ -14,6 +14,7 @@ export default function Index() {
     title: string;
     date: string;
     amount: number;
+    animate: string;
   }) {
     setExpenses((state) => [...state, expense]);
     setCurrentYear(expense.date.split("-")[0]);
@@ -79,7 +80,6 @@ export default function Index() {
   const totalInYear = Object.values(
     eachYearMonthlyExpenses[currentYear]
   ).reduce((acc, curr) => +acc + +curr, 0);
-  console.log(eachYearMonthlyExpenses);
   const filterdExpenses = expenses.filter(
     (expense) => expense.date.split("-")[0] === currentYear
   );
@@ -111,10 +111,7 @@ export default function Index() {
           </div>
           <div className="flex justify-around bg-gray-800 p-2">
             {months.map((month) => {
-              console.log(
-                "amount",
-                eachYearMonthlyExpenses[currentYear][month]
-              );
+              
               return (
                 <MonthBar
                   key={month}
